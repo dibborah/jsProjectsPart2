@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Scroll animation</title>
     <link rel="stylesheet" href="./style.css" />
-    <style>
+    <script src="./script.js" defer></script>
+    <!-- <style>
+      * {
+        box-sizing: border-box;
+      }
+
       /* Color */
       .Blue {
         --clr: #4285f4;
@@ -23,6 +28,13 @@
         --clr: #0f9d58;
       }
       body {
+        background-color: #636e72;
+        font-family: "Roboto", sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
         overflow-x: hidden;
       }
       h1 {
@@ -46,18 +58,21 @@
         transform: translateX(400%);
         transition: transform 0.4s ease;
       }
+
       /* for even */
-      .box:nth-of-type(even){
+      .box:nth-of-type(even) {
         transform: translateX(-400%);
       }
+
       .box.show {
-        transform: translateX(0%);
+        transform: translateX(0);
       }
-      .box h2{
+
+      .box h2 {
         font-size: 45px;
-        text-shadow: 2px 2px 3px #000 ;
+        text-shadow: 2px 2px 3px #000;
       }
-    </style>
+    </style> -->
   </head>
   <body>
     <h1>Scroll to see 👀 the animation</h1>

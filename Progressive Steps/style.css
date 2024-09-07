@@ -1,0 +1,33 @@
+
+/* #ff4732 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+};
+
+/* @font-face {
+    font-family: pop;
+} */
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:  pop;
+}
+
+.head{
+    text-align: center;
+}
+
+.head_1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #333;
+}
+
+.head_1 span {};

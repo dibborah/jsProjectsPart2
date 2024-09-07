@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,100;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.bg {
+    background: url('./steel-guy.jpg') no-repeat center center/cover;
+    /* background: url('./steel-guy.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    /* Need to understand this calc() css method  */
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px);
+    z-index: -1;
+    /* Also need to understand this filter css property and this blur method in more deep */
+    filter: blur(0px);
+}
+
+.loading-text {
+    font-size:50px;
+    color: white;
+}

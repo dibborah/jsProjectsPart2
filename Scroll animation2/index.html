@@ -22,6 +22,9 @@
       .Green {
         --clr: #0f9d58;
       }
+      body {
+        overflow-x: hidden;
+      }
       h1 {
         color: rgb(226, 266, 266);
         text-transform: uppercase;
@@ -39,14 +42,26 @@
         margin: 10px;
         border-radius: 20px;
         box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+        /* for odd */
         transform: translateX(400%);
         transition: transform 0.4s ease;
+      }
+      /* for even */
+      .box:nth-of-type(even){
+        transform: translateX(-400%);
+      }
+      .box.show {
+        transform: translateX(0%);
+      }
+      .box h2{
+        font-size: 45px;
+        text-shadow: 2px 2px 3px #000 ;
       }
     </style>
   </head>
   <body>
-    <h1>Scroll to see animation</h1>
-    <div class="box Blue">
+    <h1>Scroll to see 👀 the animation</h1>
+    <div class="box Blue show">
       <h2>Content</h2>
     </div>
     <div class="box Red">

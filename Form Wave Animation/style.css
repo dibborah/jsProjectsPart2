@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,400;0,700;1,100;1,700&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -5,8 +7,13 @@
 }
 
 body {
+    background-color: steelblue;
+    color: #fff;
+    font-family: 'Muli', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
+    overflow: hidden;
+    margin: 0;
+};

@@ -11,13 +11,23 @@ counters.forEach((counter) => {
             clearInterval(intervalId);
         }
         if(final_count < 1000){
-            counter.innerText = initial_count;
             initial_count += 5;
+            counter.innerText = initial_count;
         }
         if(final_count >= 1000){
+            initial_count += 50;
+            counter.innerText = (initial_count/100).toFixed(2) + 'K+';
+        };
+        if(final_count >= 10000){
             initial_count += 100;
-            counter.innerText = initial_count/100 + 'K+';
-
+            counter.innerText = (initial_count/100).toFixed(2) + 'K+';
+        };
+        if(final_count >= 100000){
+            initial_count += 1000;
+        };
+        if(final_count >= 1000000){
+            initial_count += 5000;
+            counter.innerText = (initial_count/1000000).toFixed(2) + 'M+';
         };
     } 
 });

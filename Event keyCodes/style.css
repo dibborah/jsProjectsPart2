@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    margin: 0;
+    background: linear-gradient(blueviolet, rgb(79, 21, 134));
+}
+
+#insert {
+    background-color: white;
+    padding: 50px;
+}
+
+.key {
+    border: 2px solid #ccc;
+    background-color: rgba(137, 43, 226, 0.767 );
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    flex-direction: column;
+    margin: 10px;
+    min-width: 150px;
+    position: relative;
+}
+
+/* Javascript */
+
+.key small {
+    position: absolute;
+    top: -24px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    color: #555;
+    font-size: 14px;
+}

@@ -7,6 +7,7 @@ password.addEventListener('input', () => {
         message.style.display = 'block'
         strength.innerText = 'weak';
         strength.style.color = 'red';
+        // message.style.color = 'red';
         password.style.borderColor = 'red';
     } else {
         message.style.display = 'none'
@@ -14,11 +15,13 @@ password.addEventListener('input', () => {
     if(password.value.length >= 5) {
         strength.innerText = 'medium';
         strength.style.color = 'orange';
+        // message.style.color = 'orange';
         password.style.borderColor = 'orange';
     }
     if(password.value.length >= 8) {
         strength.innerText = 'strong';
         strength.style.color = 'green';
+        // message.style.color = 'green';
         password.style.borderColor = 'green';
     }
 });

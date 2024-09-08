@@ -6,6 +6,7 @@
     <title>Toast Notification</title>
     <link rel="stylesheet" href="./style.css" />
     <script src="./script.js" defer></script>
+    <script src="https://kit.fontawesome.com/0d1e0e9f44.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="buttons">
@@ -16,9 +17,9 @@
 
     <div id="toastBox"></div>
     <script>
-      const successMsg = "Successfully submitted";
-      const errorMsg = "Please fix the error!";
-      const invalidMsg = "Invalid input, check again";
+      const successMsg = "<i class='fa-solid fa-circle-check'></i>Successfully submitted";
+      const errorMsg = "<i class='fa-solid fa-circle-xmark'></i> Please fix the error!";
+      const invalidMsg = "<i class='fa-solid fa-circle-exclamation'></i> Invalid input, check again";
     </script>
   </body>
 </html>

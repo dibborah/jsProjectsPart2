@@ -36,6 +36,7 @@ nav ul li {
     list-style: none;
     margin: 20px 30px;
     color: #fff;
+    cursor: pointer;
 }
 
 .text {
@@ -51,4 +52,10 @@ nav.sticky {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: padding 1s;
+}
+
+
+nav.sticky ul {
+    width: auto;
 }

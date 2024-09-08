@@ -5,3 +5,31 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    background: #1e1d1d;
+}
+
+.input-box {
+    width: 90%;
+    max-width: 500px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 auto;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px 10px;
+    background: transparent;
+    outline: 0;
+    border: 0;
+    font: 22px;
+}
+.input-box img {
+    width: 35px ;
+}

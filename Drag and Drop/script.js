@@ -10,14 +10,14 @@ for(let list of lists) {
         });
         rightBox.addEventListener('drop', () => {
             rightBox.append(selected);
-            selected = null;
+            selected = '';
         });
         leftBox.addEventListener('dragover', (e) => {
             e.preventDefault();
         });
         leftBox.addEventListener('drop', (e) => {
             leftBox.append(selected);
-            selected = null;
+            selected = '';
         })
     });
 

@@ -10,4 +10,7 @@ const showToast = (msg) => {
     if(msg.includes('Invalid')){
         toast.classList.add('invalid');
     }
+    setTimeout(() => {
+        toast.remove();
+    }, 5000)
 };

@@ -59,3 +59,38 @@ span {
     color: #61b752;
     display: block;
 }
+
+.radio-button {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #ccc; /* Initial border color (gray or light gray usually) */
+    background-color: #fff; /* Ensure background is white or transparent to show the border */
+  }
+  
+  /* Styles for when the radio button is checked */
+  .radio-button:checked {
+    border-color: #424DB4;
+  }
+  
+  /* Inner circle styles (if you want one) */
+  .radio-button:checked::after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    margin: 50% 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: #424DB4; /* Blue inner circle color (adjust as needed) */
+  }
+  
+  
+  /* Change the DEFAULT (unchecked) border color */
+  .radio-button {
+      border-color: gray; /* Sets the default border to blue */
+  }
